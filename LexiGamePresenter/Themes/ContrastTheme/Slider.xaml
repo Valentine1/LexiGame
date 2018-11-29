@@ -1,0 +1,36 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" >
+    <Style x:Key="SliderArrowStyle">
+        <Style.Triggers>
+            <Trigger Property="Shape.IsMouseOver" Value="False">
+                <Setter Property="Shape.Fill" >
+                    <Setter.Value>
+                        <SolidColorBrush Color="LightGray"/>
+                    </Setter.Value>
+                </Setter>
+                <Setter Property="Shape.Stroke">
+                    <Setter.Value>
+                        <SolidColorBrush Color="Gray"/>
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+            <Trigger Property="Shape.IsMouseOver" Value="True">
+                <Setter Property="Shape.Fill" >
+                    <Setter.Value>
+                        <SolidColorBrush Color="Red"/>
+                    </Setter.Value>
+                </Setter>
+                <Setter Property="Shape.Stroke">
+                    <Setter.Value>
+                        <SolidColorBrush Color="White"/>
+                    </Setter.Value>
+                </Setter>
+                <Setter Property="Shape.BitmapEffect">
+                    <Setter.Value>
+                        <OuterGlowBitmapEffect GlowColor="Red"  GlowSize="9.0" Noise="0.1" Opacity="0.9" >
+                        </OuterGlowBitmapEffect>
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+</ResourceDictionary>

@@ -1,0 +1,44 @@
+﻿<local:baseWindow x:Class="LexiGame.View.GameWin"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+     xmlns:sys="clr-namespace:System;assembly=mscorlib"     xmlns:local="clr-namespace:LexiGame.View"
+    Title="Window1"  Loaded="Window_Loaded"   Style="{DynamicResource win}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="154"/>
+        </Grid.ColumnDefinitions>
+        <Canvas  Name="canvasField" Style="{DynamicResource canvasGame}" Grid.RowSpan="2"  Grid.Row="0" Grid.Column="0"/>
+        <TextBlock VerticalAlignment="Top" HorizontalAlignment="Left" Text="DEMO" Opacity="0.6" Foreground="Red" Name="tbDemo"
+                   FontSize="50" FontWeight="700"
+               IsHitTestVisible="False" Cursor="None"  Margin="0,0,0,0"  Grid.Row="0" Grid.Column="0"/>
+        <StackPanel  Style="{DynamicResource stackScore}"  Grid.Column="1" Grid.Row="0" Grid.RowSpan="2" >
+            <TextBlock HorizontalAlignment="Center" Name="tbTheme"  Margin="10,5,5,0" Style="{DynamicResource lblBigBold}" />
+            <Polygon  HorizontalAlignment="Center"  Name="upArrow" Style="{DynamicResource SliderArrowStyle}" 
+                        MouseEnter="upArrow_MouseEnter" MouseLeave="upArrow_MouseLeave"    StrokeThickness="1"  FillRule="Nonzero" Points="5,30 45,15 85,30">
+            </Polygon>
+            <Border Style="{DynamicResource ImageScroll}">
+                <ScrollViewer Height="280" Width="100" HorizontalAlignment="Center"  Name="scrollImages" VerticalScrollBarVisibility="Hidden" >
+                    <local:ImageStack Width="100"  x:Name="spImages"  >
+                    </local:ImageStack>
+                </ScrollViewer>
+            </Border>
+            <Polygon HorizontalAlignment="Center" VerticalAlignment="Bottom" Style="{DynamicResource SliderArrowStyle}"
+                     MouseEnter="downArrow_MouseEnter" MouseLeave="downArrow_MouseLeave"
+                     Name="downArrow"  StrokeThickness="1" FillRule="Nonzero" Points="5,0 45,15 85,0">
+            </Polygon>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="{DynamicResource Levels}" Margin="10,5,5,5" Style="{DynamicResource lblBigBold}" />
+                <TextBlock Name="tbLevels" Margin="5" Style="{DynamicResource lblBigBold}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="{DynamicResource Scores}" Margin="10,5,5,5" Style="{DynamicResource lblBigBold}" />
+                <TextBlock Name="tbScores" Margin="5" Style="{DynamicResource lblBigBold}"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</local:baseWindow>

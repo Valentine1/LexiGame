@@ -1,0 +1,346 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" >
+   
+    <Style x:Key="toolBar">
+        <Style.Setters>
+            <Setter Property="Control.Background" Value="#FFDC86"/>
+        </Style.Setters>
+    </Style>
+    <ControlTemplate x:Key="ctStartButton" TargetType="ButtonBase" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                     xmlns:s="clr-namespace:System;assembly=mscorlib" >
+        <Border          Name="Chrome" SnapsToDevicePixels="True">
+            <ContentPresenter RecognizesAccessKey="True"  Content="{TemplateBinding ContentControl.Content}"
+                              ContentTemplate="{TemplateBinding ContentControl.ContentTemplate}"
+                              ContentStringFormat="{TemplateBinding ContentControl.ContentStringFormat}" Margin="{TemplateBinding Control.Padding}" 
+                              HorizontalAlignment="{TemplateBinding Control.HorizontalContentAlignment}" 
+                              VerticalAlignment="{TemplateBinding Control.VerticalContentAlignment}"
+                              SnapsToDevicePixels="{TemplateBinding UIElement.SnapsToDevicePixels}" />
+        </Border>
+        <ControlTemplate.Triggers>
+            <Trigger Property="UIElement.IsMouseOver"  Value="True">
+                <Setter Property="Border.Background" TargetName="Chrome">
+                    <Setter.Value>
+                       <ImageBrush Stretch="None" TileMode="None" ImageSource="images/startOver.ico" />
+                    </Setter.Value>
+                </Setter>
+                <Setter Property="Border.BorderBrush" TargetName="Chrome">
+                    <Setter.Value>
+                        <LinearGradientBrush>
+                            <LinearGradientBrush.GradientStops>
+                                <GradientStop Offset="0.0" Color="#CCCCCC"/>
+                                <GradientStop Offset="1.0" Color="#202020"/>
+                            </LinearGradientBrush.GradientStops>
+                        </LinearGradientBrush>
+                    </Setter.Value>
+                </Setter>
+                <Setter Property="Border.BorderThickness" TargetName="Chrome">
+                    <Setter.Value>
+                       1
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+            <Trigger Property="UIElement.IsMouseOver"  Value="False">
+                <Setter Property="Border.Background" TargetName="Chrome">
+                    <Setter.Value>
+                        <ImageBrush Stretch="None" TileMode="None" ImageSource="images/start.ico" />
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+            <Trigger Property="ButtonBase.IsPressed"  Value="True">
+                <Setter Property="Border.Background" TargetName="Chrome">
+                    <Setter.Value>
+                        <ImageBrush Stretch="None" TileMode="None" ImageSource="images/startPressed.ico" />
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+            <Trigger Property="UIElement.IsEnabled" Value="False">
+                <Setter Property="Border.Background" TargetName="Chrome">
+                    <Setter.Value>
+                        <ImageBrush Stretch="None" TileMode="None" ImageSource="images/startDisabled.ico" />
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    <ControlTemplate x:Key="ctShowButton" TargetType="ButtonBase" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                     xmlns:s="clr-namespace:System;assembly=mscorlib" >
+        <Border          Name="Chrome" SnapsToDevicePixels="True">
+            <ContentPresenter RecognizesAccessKey="True"  Content="{TemplateBinding ContentControl.Content}"
+                              ContentTemplate="{TemplateBinding ContentControl.ContentTemplate}"
+                              ContentStringFormat="{TemplateBinding ContentControl.ContentStringFormat}" Margin="{TemplateBinding Control.Padding}" 
+                              HorizontalAlignment="{TemplateBinding Control.HorizontalContentAlignment}" 
+                              VerticalAlignment="{TemplateBinding Control.VerticalContentAlignment}"
+                              SnapsToDevicePixels="{TemplateBinding UIElement.SnapsToDevicePixels}" />
+        </Border>
+        <ControlTemplate.Triggers>
+            <Trigger Property="UIElement.IsMouseOver"  Value="True">
+                <Setter Property="Border.Background" TargetName="Chrome">
+                    <Setter.Value>
+                        <ImageBrush Stretch="None" TileMode="None" ImageSource="images/openOver.ico" />
+                    </Setter.Value>
+                </Setter>
+                <Setter Property="Border.BorderBrush" TargetName="Chrome">
+                    <Setter.Value>
+                        <LinearGradientBrush>
+                            <LinearGradientBrush.GradientStops>
+                                <GradientStop Offset="0.0" Color="#CCCCCC"/>
+                                <GradientStop Offset="1.0" Color="#202020"/>
+                            </LinearGradientBrush.GradientStops>
+                        </LinearGradientBrush>
+                    </Setter.Value>
+                </Setter>
+                <Setter Property="Border.BorderThickness" TargetName="Chrome">
+                    <Setter.Value>
+                        1
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+            <Trigger Property="UIElement.IsMouseOver"  Value="False">
+                <Setter Property="Border.Background" TargetName="Chrome">
+                    <Setter.Value>
+                        <ImageBrush Stretch="None" TileMode="None" ImageSource="images/open.ico" />
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+            <Trigger Property="ButtonBase.IsPressed"  Value="True">
+                <Setter Property="Border.Background" TargetName="Chrome">
+                    <Setter.Value>
+                        <ImageBrush Stretch="None" TileMode="None" ImageSource="images/openPressed.ico" />
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+            <Trigger Property="UIElement.IsEnabled" Value="False">
+                <Setter Property="Border.Background" TargetName="Chrome">
+                    <Setter.Value>
+                        <ImageBrush Stretch="None" TileMode="None" ImageSource="images/openDisabled.ico" />
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    <ControlTemplate x:Key="ctSettingsButton" TargetType="ButtonBase" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                     xmlns:s="clr-namespace:System;assembly=mscorlib" >
+        <Border          Name="Chrome" SnapsToDevicePixels="True">
+            <ContentPresenter RecognizesAccessKey="True"  Content="{TemplateBinding ContentControl.Content}"
+                              ContentTemplate="{TemplateBinding ContentControl.ContentTemplate}"
+                              ContentStringFormat="{TemplateBinding ContentControl.ContentStringFormat}" Margin="{TemplateBinding Control.Padding}" 
+                              HorizontalAlignment="{TemplateBinding Control.HorizontalContentAlignment}" 
+                              VerticalAlignment="{TemplateBinding Control.VerticalContentAlignment}"
+                              SnapsToDevicePixels="{TemplateBinding UIElement.SnapsToDevicePixels}" />
+        </Border>
+        <ControlTemplate.Triggers>
+            <Trigger Property="UIElement.IsMouseOver"  Value="True">
+                <Setter Property="Border.Background" TargetName="Chrome">
+                    <Setter.Value>
+                        <ImageBrush Stretch="None" TileMode="None" ImageSource="images/settingsOver.ico" />
+                    </Setter.Value>
+                </Setter>
+                <Setter Property="Border.BorderBrush" TargetName="Chrome">
+                    <Setter.Value>
+                        <LinearGradientBrush>
+                            <LinearGradientBrush.GradientStops>
+                                <GradientStop Offset="0.0" Color="#CCCCCC"/>
+                                <GradientStop Offset="1.0" Color="#202020"/>
+                            </LinearGradientBrush.GradientStops>
+                        </LinearGradientBrush>
+                    </Setter.Value>
+                </Setter>
+                <Setter Property="Border.BorderThickness" TargetName="Chrome">
+                    <Setter.Value>
+                        1
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+            <Trigger Property="UIElement.IsMouseOver"  Value="False">
+                <Setter Property="Border.Background" TargetName="Chrome">
+                    <Setter.Value>
+                        <ImageBrush Stretch="None" TileMode="None" ImageSource="images/settings.ico" />
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+            <Trigger Property="ButtonBase.IsPressed"  Value="True">
+                <Setter Property="Border.Background" TargetName="Chrome">
+                    <Setter.Value>
+                        <ImageBrush Stretch="None" TileMode="None" ImageSource="images/settingsPressed.ico" />
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+            <Trigger Property="UIElement.IsEnabled" Value="False">
+                <Setter Property="Border.Background" TargetName="Chrome">
+                    <Setter.Value>
+                        <ImageBrush Stretch="None" TileMode="None" ImageSource="images/settings.ico" />
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    <ControlTemplate x:Key="tcNewButton" TargetType="ButtonBase" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                     xmlns:s="clr-namespace:System;assembly=mscorlib" >
+        <Border          Name="Chrome" SnapsToDevicePixels="True">
+            <ContentPresenter RecognizesAccessKey="True"  Content="{TemplateBinding ContentControl.Content}"
+                              ContentTemplate="{TemplateBinding ContentControl.ContentTemplate}"
+                              ContentStringFormat="{TemplateBinding ContentControl.ContentStringFormat}" Margin="{TemplateBinding Control.Padding}" 
+                              HorizontalAlignment="{TemplateBinding Control.HorizontalContentAlignment}" 
+                              VerticalAlignment="{TemplateBinding Control.VerticalContentAlignment}"
+                              SnapsToDevicePixels="{TemplateBinding UIElement.SnapsToDevicePixels}" />
+        </Border>
+        <ControlTemplate.Triggers>
+            <Trigger Property="UIElement.IsMouseOver"  Value="True">
+                <Setter Property="Border.Background" TargetName="Chrome">
+                    <Setter.Value>
+                        <ImageBrush Stretch="None" TileMode="None" ImageSource="images/newOver.ico" />
+                    </Setter.Value>
+                </Setter>
+                <Setter Property="Border.BorderBrush" TargetName="Chrome">
+                    <Setter.Value>
+                        <LinearGradientBrush>
+                            <LinearGradientBrush.GradientStops>
+                                <GradientStop Offset="0.0" Color="#CCCCCC"/>
+                                <GradientStop Offset="1.0" Color="#202020"/>
+                            </LinearGradientBrush.GradientStops>
+                        </LinearGradientBrush>
+                    </Setter.Value>
+                </Setter>
+                <Setter Property="Border.BorderThickness" TargetName="Chrome">
+                    <Setter.Value>
+                        1
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+            <Trigger Property="UIElement.IsMouseOver"  Value="False">
+                <Setter Property="Border.Background" TargetName="Chrome">
+                    <Setter.Value>
+                        <ImageBrush Stretch="None" TileMode="None" ImageSource="images/new.ico" />
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+            <Trigger Property="ButtonBase.IsPressed"  Value="True">
+                <Setter Property="Border.Background" TargetName="Chrome">
+                    <Setter.Value>
+                        <ImageBrush Stretch="None" TileMode="None" ImageSource="images/newPressed.ico" />
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+            <Trigger Property="UIElement.IsEnabled" Value="False">
+                <Setter Property="Border.Background" TargetName="Chrome">
+                    <Setter.Value>
+                        <ImageBrush Stretch="None" TileMode="None" ImageSource="images/newDisabled.ico" />
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    <ControlTemplate x:Key="tcSaveButton" TargetType="ButtonBase" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                     xmlns:s="clr-namespace:System;assembly=mscorlib" >
+        <Border          Name="Chrome" SnapsToDevicePixels="True">
+            <ContentPresenter RecognizesAccessKey="True"  Content="{TemplateBinding ContentControl.Content}"
+                              ContentTemplate="{TemplateBinding ContentControl.ContentTemplate}"
+                              ContentStringFormat="{TemplateBinding ContentControl.ContentStringFormat}" Margin="{TemplateBinding Control.Padding}" 
+                              HorizontalAlignment="{TemplateBinding Control.HorizontalContentAlignment}" 
+                              VerticalAlignment="{TemplateBinding Control.VerticalContentAlignment}"
+                              SnapsToDevicePixels="{TemplateBinding UIElement.SnapsToDevicePixels}" />
+        </Border>
+        <ControlTemplate.Triggers>
+            <Trigger Property="UIElement.IsMouseOver"  Value="True">
+                <Setter Property="Border.Background" TargetName="Chrome">
+                    <Setter.Value>
+                        <ImageBrush Stretch="None" TileMode="None" ImageSource="images/saveOver.ico" />
+                    </Setter.Value>
+                </Setter>
+                <Setter Property="Border.BorderBrush" TargetName="Chrome">
+                    <Setter.Value>
+                        <LinearGradientBrush>
+                            <LinearGradientBrush.GradientStops>
+                                <GradientStop Offset="0.0" Color="#CCCCCC"/>
+                                <GradientStop Offset="1.0" Color="#202020"/>
+                            </LinearGradientBrush.GradientStops>
+                        </LinearGradientBrush>
+                    </Setter.Value>
+                </Setter>
+                <Setter Property="Border.BorderThickness" TargetName="Chrome">
+                    <Setter.Value>
+                        1
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+            <Trigger Property="UIElement.IsMouseOver"  Value="False">
+                <Setter Property="Border.Background" TargetName="Chrome">
+                    <Setter.Value>
+                        <ImageBrush Stretch="None" TileMode="None" ImageSource="images/save.ico" />
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+            <Trigger Property="ButtonBase.IsPressed"  Value="True">
+                <Setter Property="Border.Background" TargetName="Chrome">
+                    <Setter.Value>
+                        <ImageBrush Stretch="None" TileMode="None" ImageSource="images/savePressed.ico" />
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+            <Trigger Property="UIElement.IsEnabled" Value="False">
+                <Setter Property="Border.Background" TargetName="Chrome">
+                    <Setter.Value>
+                        <ImageBrush Stretch="None" TileMode="None" ImageSource="images/saveDisabled.ico" />
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    <ControlTemplate x:Key="tcDeleteButton" TargetType="ButtonBase" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                     xmlns:s="clr-namespace:System;assembly=mscorlib" >
+        <Border          Name="Chrome" SnapsToDevicePixels="True">
+            <ContentPresenter RecognizesAccessKey="True"  Content="{TemplateBinding ContentControl.Content}"
+                              ContentTemplate="{TemplateBinding ContentControl.ContentTemplate}"
+                              ContentStringFormat="{TemplateBinding ContentControl.ContentStringFormat}" Margin="{TemplateBinding Control.Padding}" 
+                              HorizontalAlignment="{TemplateBinding Control.HorizontalContentAlignment}" 
+                              VerticalAlignment="{TemplateBinding Control.VerticalContentAlignment}"
+                              SnapsToDevicePixels="{TemplateBinding UIElement.SnapsToDevicePixels}" />
+        </Border>
+        <ControlTemplate.Triggers>
+            <Trigger Property="UIElement.IsMouseOver"  Value="True">
+                <Setter Property="Border.Background" TargetName="Chrome">
+                    <Setter.Value>
+                        <ImageBrush Stretch="None" TileMode="None" ImageSource="images/deleteOver.ico" />
+                    </Setter.Value>
+                </Setter>
+                <Setter Property="Border.BorderBrush" TargetName="Chrome">
+                    <Setter.Value>
+                        <LinearGradientBrush>
+                            <LinearGradientBrush.GradientStops>
+                                <GradientStop Offset="0.0" Color="#CCCCCC"/>
+                                <GradientStop Offset="1.0" Color="#202020"/>
+                            </LinearGradientBrush.GradientStops>
+                        </LinearGradientBrush>
+                    </Setter.Value>
+                </Setter>
+                <Setter Property="Border.BorderThickness" TargetName="Chrome">
+                    <Setter.Value>
+                        1
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+            <Trigger Property="UIElement.IsMouseOver"  Value="False">
+                <Setter Property="Border.Background" TargetName="Chrome">
+                    <Setter.Value>
+                        <ImageBrush Stretch="None" TileMode="None" ImageSource="images/delete.ico" />
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+            <Trigger Property="ButtonBase.IsPressed"  Value="True">
+                <Setter Property="Border.Background" TargetName="Chrome">
+                    <Setter.Value>
+                        <ImageBrush Stretch="None" TileMode="None" ImageSource="images/deletePressed.ico" />
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+            <Trigger Property="UIElement.IsEnabled" Value="False">
+                <Setter Property="Border.Background" TargetName="Chrome">
+                    <Setter.Value>
+                        <ImageBrush Stretch="None" TileMode="None" ImageSource="images/deleteDisabled.ico" />
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+  
+</ResourceDictionary>

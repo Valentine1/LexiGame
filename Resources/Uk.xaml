@@ -1,0 +1,34 @@
+﻿<ResourceDictionary
+     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+     xmlns:sys="clr-namespace:System;assembly=mscorlib" >
+    <sys:String x:Key="Game">Гра</sys:String>
+    <sys:String x:Key="NewGame">Нова Гра</sys:String>
+    <sys:String x:Key="Settings">Налаштування</sys:String>
+    <sys:String x:Key="Statistic">Статистика</sys:String>
+    <sys:String x:Key="Exit">Вийти</sys:String>
+    <sys:String x:Key="Theme">Тема</sys:String>
+    <sys:String x:Key="Show">Показати</sys:String>
+    <sys:String x:Key="ImportTheme">Імпорт</sys:String>
+    <sys:String x:Key="ExportTheme">Експорт</sys:String>
+    <sys:String x:Key="Themes">Теми</sys:String>
+    <sys:String x:Key="ThemeForGame">Тема для гри</sys:String>
+    <sys:String x:Key="Range">Діапазон (слів на рівень)</sys:String>
+    <sys:String x:Key="Step">Крок (нових слів на рівень)</sys:String>
+    <sys:String x:Key="Appearance">Зовнішній вигляд</sys:String>
+    <sys:String x:Key="InterfaceLanguage">Мова інтрефейсу</sys:String>
+    <sys:String x:Key="OK">ОК</sys:String>
+    <sys:String x:Key="Cancel">Відміна</sys:String>
+    <sys:String x:Key="Word">Слово</sys:String>
+    <sys:String x:Key="Browse">Шукати</sys:String>
+    <sys:String x:Key="Levels">Рівні</sys:String>
+    <sys:String x:Key="Scores">Очки</sys:String>
+
+    <sys:String x:Key="ShowThemes">Показати Теми</sys:String>
+    <sys:String x:Key="NewTheme">Нова Тема</sys:String>
+    <sys:String x:Key="SaveTheme">Зберегти Тему</sys:String>
+    <sys:String x:Key="DeleteTheme">Видалити Тему</sys:String>
+    <sys:String x:Key="NewWord">Нове Слово</sys:String>
+    <sys:String x:Key="SaveWord">Зберегти Слово</sys:String>
+    <sys:String x:Key="DeleteWord">Видалити Слово</sys:String>
+</ResourceDictionary>

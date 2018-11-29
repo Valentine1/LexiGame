@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{40C24181-4D7A-4832-BD80-0D87C9093D08}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Resources</RootNamespace>
+    <AssemblyName>Resources</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework.Aero">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="En.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\Contrast\PadAndBall.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\Light\ListBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\Light\Main.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\Light\Menu.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\Light\PadAndBall.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\Light\ToolBar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Uk.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\Contrast\ListBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\Contrast\Menu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\Contrast\Slider.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\Contrast\ToolBar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\Light\Slider.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\Contrast\Main.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Themes\Light\images\start.ico" />
+    <Resource Include="Themes\Light\images\startDisabled.ico" />
+    <Resource Include="Themes\Light\images\startOver.ico" />
+    <Resource Include="Themes\Light\images\startPressed.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Themes\Light\images\open.ico" />
+    <Resource Include="Themes\Light\images\openDisabled.ico" />
+    <Resource Include="Themes\Light\images\openOver.ico" />
+    <Resource Include="Themes\Light\images\openPressed.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Themes\Light\images\delete.ico" />
+    <Resource Include="Themes\Light\images\deleteDisabled.ico" />
+    <Resource Include="Themes\Light\images\deleteOver.ico" />
+    <Resource Include="Themes\Light\images\deletePressed.ico" />
+    <Resource Include="Themes\Light\images\new.ico" />
+    <Resource Include="Themes\Light\images\newDisabled.ico" />
+    <Resource Include="Themes\Light\images\newOver.ico" />
+    <Resource Include="Themes\Light\images\newPressed.ico" />
+    <Resource Include="Themes\Light\images\Play.ico" />
+    <Resource Include="Themes\Light\images\PlayDisabled.ico" />
+    <Resource Include="Themes\Light\images\PlayOver.ico" />
+    <Resource Include="Themes\Light\images\PlayPressed.ico" />
+    <Resource Include="Themes\Light\images\save.ico" />
+    <Resource Include="Themes\Light\images\saveDisabled.ico" />
+    <Resource Include="Themes\Light\images\saveOver.ico" />
+    <Resource Include="Themes\Light\images\savePressed.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Themes\Light\images\settings.ico" />
+    <Resource Include="Themes\Light\images\settingsOver.ico" />
+    <Resource Include="Themes\Light\images\settingsPressed.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Themes\Contrast\images\delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Themes\Contrast\images\deleteDisabled.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Themes\Contrast\images\deleteOver.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Themes\Contrast\images\deletePressed.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Themes\Contrast\images\new.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Themes\Contrast\images\newDisabled.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Themes\Contrast\images\newOver.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Themes\Contrast\images\newPressed.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Themes\Contrast\images\nochslice.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Themes\Contrast\images\open.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Themes\Contrast\images\openDisabled.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Themes\Contrast\images\openOver.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Themes\Contrast\images\openPressed.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Themes\Contrast\images\Play.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Themes\Contrast\images\PlayDisabled.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Themes\Contrast\images\PlayOver.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Themes\Contrast\images\PlayPressed.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Themes\Contrast\images\save.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Themes\Contrast\images\saveDisabled.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Themes\Contrast\images\saveOver.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Themes\Contrast\images\savePressed.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Themes\Contrast\images\settings.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Themes\Contrast\images\settingsOver.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Themes\Contrast\images\settingsPressed.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Themes\Contrast\images\start.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Themes\Contrast\images\startDisabled.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Themes\Contrast\images\startOver.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Themes\Contrast\images\startPressed.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Themes\Light\images\skySlice.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Themes\Light\images\skySlice30.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

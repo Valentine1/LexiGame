@@ -1,0 +1,57 @@
+﻿<local:baseWindow x:Class="LexiGame.View.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         xmlns:local="clr-namespace:LexiGame.View"
+    Title="LexiGame" Height="620" Width="800" ResizeMode="CanMinimize" Style="{DynamicResource mainWin}"  Loaded="Window_Loaded" 
+                  LocationChanged="Window_LocationChanged" WindowStartupLocation="CenterScreen" Icon="/LexiGameView;component/Images/FLUG.ICO">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition   Height="67"  />
+            <RowDefinition  Height="*"  />
+        </Grid.RowDefinitions>
+        <StackPanel  Name="panel" Margin="0,0,0,7">
+            <Menu BorderBrush="Gray" Style="{DynamicResource MenuControl}"   BorderThickness="1" Height="30">
+                <MenuItem  HorizontalAlignment="Left" Style="{DynamicResource MainMenuStyle}" 
+                          FontWeight="700"  Width="60"  Padding="10,2,0,2" Margin="4,3,0,0" Header="{DynamicResource Game}" >
+                    <MenuItem.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <StackPanel Orientation="Vertical"></StackPanel>
+                        </ItemsPanelTemplate>
+                    </MenuItem.ItemsPanel>
+                    <MenuItem   Template="{DynamicResource MenuItemTemplate}" Padding="15,0,0,0" Command="local:GameCommands.Start"
+                               Header="{DynamicResource NewGame}" Style="{DynamicResource MenuStyle}" />
+                    <MenuItem Template="{DynamicResource MenuItemTemplate}" Padding="15,0,0,0" 
+                               Header="{DynamicResource Statistic}" Style="{DynamicResource MenuStyle}"  Command="local:GameCommands.ShowStatistic" />
+                    <MenuItem  Template="{DynamicResource MenuItemTemplate}" Padding="15,0,0,0" Command="local:GameCommands.ShowSettings"   
+                               Header="{DynamicResource Settings}" Style="{DynamicResource MenuStyle}" />
+                    <MenuItem   Template="{DynamicResource MenuItemTemplate}" Padding="15,0,0,0" 
+                               Header="{DynamicResource Exit}" Style="{DynamicResource MenuStyle}"  Command="local:GameCommands.Exit" />
+                </MenuItem>
+                <MenuItem  HorizontalAlignment="Left" Style="{DynamicResource MainMenuStyle}" FontSize="15" 
+                          FontWeight="700"  Width="60"  Padding="10,2,0,2" Margin="4,3,0,0" Header="{DynamicResource Theme}" >
+                    <MenuItem.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <StackPanel Orientation="Vertical"></StackPanel>
+                        </ItemsPanelTemplate>
+                    </MenuItem.ItemsPanel>
+                    <MenuItem   Template="{DynamicResource MenuItemTemplate}" Padding="15,0,0,0" Command="local:GameCommands.ShowThemes"
+                               Header="{DynamicResource Show}" Style="{DynamicResource MenuStyle}" />
+                    <MenuItem   Template="{DynamicResource MenuItemTemplate}" Padding="15,0,0,0" Command="local:GameCommands.ShowStatistic"
+                               Header="{DynamicResource ExportTheme}" Style="{DynamicResource MenuStyle}" />
+                    <MenuItem   Template="{DynamicResource MenuItemTemplate}" Padding="15,0,0,0" Command="local:GameCommands.ShowStatistic"
+                               Header="{DynamicResource ImportTheme}" Style="{DynamicResource MenuStyle}" />
+                </MenuItem>
+            </Menu>
+            <ToolBar BorderBrush="Gray" BorderThickness="1"  Style="{DynamicResource toolBar}" Height="30">
+                <Button Name="btStart"   Margin="6,0,0,0" Command="local:GameCommands.Start"   Template="{DynamicResource ctStartButton}" 
+                        ToolTip="{DynamicResource NewGame}" Height="20" Width="20" />
+                <Button Name="btShow" Margin="6,0,0,0" Command="local:GameCommands.ShowThemes"   Template="{DynamicResource ctShowButton}" 
+                         ToolTip="{DynamicResource ShowThemes}"  Height="20" Width="20" />
+                <Button Name="btSettings" Margin="6,0,0,0" Command="local:GameCommands.ShowSettings"   Template="{DynamicResource ctSettingsButton}" 
+                         ToolTip="{DynamicResource Settings}"  Height="20" Width="20" />
+            </ToolBar>
+        </StackPanel>
+        <TextBlock VerticalAlignment="Top" HorizontalAlignment="Left" Text="DEMO" Opacity="0.6" Foreground="Red" Name="tbDemo"
+                   FontSize="50" FontWeight="700"  
+               IsHitTestVisible="False" Cursor="None"  Margin="0,60,0,0"  Grid.RowSpan="2"  />
+    </Grid>
+</local:baseWindow>

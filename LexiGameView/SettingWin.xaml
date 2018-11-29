@@ -1,0 +1,32 @@
+﻿<local:baseWindow  x:Class="LexiGame.View.SettingWin"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:local="clr-namespace:LexiGame.View" 
+    Title="{DynamicResource Settings}" Style="{DynamicResource settingWin}" WindowStartupLocation="CenterOwner" >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="1.5*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="199"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock  Grid.Row="0" Text= "{DynamicResource ThemeForGame}"  Height="20" Margin="20,0,0,0" />
+        <TextBlock Grid.Row="1" Text="{DynamicResource Range}" Height="20" Margin="20,0,0,0" />
+        <TextBlock Grid.Row="2" Text="{DynamicResource Step}" Height="20" Margin="20,0,0,0" />
+        <TextBlock Grid.Row="3" Text="{DynamicResource Appearance}" Height="20" Margin="20,0,0,0" />
+        <TextBlock Grid.Row="4" Text="{DynamicResource InterfaceLanguage}"  Height="20" Margin="20,0,0,0" />
+        <ComboBox Name="cbThemes" Grid.Column="1"  Grid.Row="0" Height="20" Margin="0,0,20,0" />
+        <ComboBox Name="cbRange" Grid.Column="1"  Grid.Row="1" Height="20" Width="50" HorizontalAlignment="Left" Margin="0,0,20,0" />
+        <ComboBox Name="cbStep" Grid.Column="1"  Grid.Row="2" Height="20" Width="50" HorizontalAlignment="Left" Margin="0,0,20,0" />
+        <ComboBox Name="cbSkin" Grid.Column="1"  Grid.Row="3" Height="20" Margin="0,0,20,0" />
+        <ComboBox Name="cbLanguage" Grid.Column="1"  Grid.Row="4" Height="20" Width="50" HorizontalAlignment="Left" Margin="0,0,20,0" />
+   
+        <Button Grid.Column="0"  Grid.Row="5"  Content="{DynamicResource OK}"  Height="25" Width="60" Click="Button_Click" />
+        <Button Grid.Column="1"  Grid.Row="5" Name="btCancel"  Content="{DynamicResource Cancel}"  Height="25" Width="60" Click="btCancel_Click" />
+    </Grid>
+</local:baseWindow >
